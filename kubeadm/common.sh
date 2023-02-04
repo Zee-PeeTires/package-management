@@ -98,3 +98,5 @@ systemctl enable kubelet.service
 
 kubeadm join 172.31.27.44:6443 --token 6kfhdt.2oeund3moltpnl86 \
         --discovery-token-ca-cert-hash sha256:914716609cd9b02f2b962e10a1beb49cd12079fd68d97784f948a2d82532b1a3
+ 
+ sudo - ubuntu
