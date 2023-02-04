@@ -66,7 +66,7 @@ sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd/config
 systemctl restart containerd
 systemctl enable containerd
 
-5) Installing kubeadm, kubelet and kubectl
+#5) Installing kubeadm, kubelet and kubectl
 
 # Update the apt package index and install packages needed to use the Kubernetes apt repository:
 
@@ -96,5 +96,5 @@ systemctl daemon-reload
 systemctl start kubelet
 systemctl enable kubelet.service
 
-sudo kubeadm join 10.0.0.6:6443 --token xmzufh.e0nu3kb5ohijfxyh \
-        --discovery-token-ca-cert-hash sha256:579b6a53bd00c8483f5150b9fb521b6431fc38b1ac716b8b9a5f668928a93771
+kubeadm join 172.31.27.44:6443 --token 6kfhdt.2oeund3moltpnl86 \
+        --discovery-token-ca-cert-hash sha256:914716609cd9b02f2b962e10a1beb49cd12079fd68d97784f948a2d82532b1a3
